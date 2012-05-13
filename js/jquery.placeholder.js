@@ -27,6 +27,7 @@
     placeholder.css('opacity', 0.7);
     placeholder.css('cursor', input.css('cursor'));
     placeholder.css('font-size', settings.fontsize);
+    placeholder.css('display', 'none');
     parent.append(placeholder);
 
     toggle();

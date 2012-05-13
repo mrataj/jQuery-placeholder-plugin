@@ -21,14 +21,18 @@ li
 	list-style: none;
 }
 
-body
+h2
 {
-	padding: 20px;
+	margin-top: 50px;
+	padding: 30px;
+	font-size: 1.9em;
+	font-family: helvetica;
+	text-align: center;
 }
 
 div.form
 {
-	margin: 0px auto;
+	margin: 30px auto;
 	width: 280px;
 }
 
@@ -60,13 +64,25 @@ div.form > div.result
 {
 	margin: 6px;
 	display: none;
-	align: center;
 	margin-top: 30px;
 	font-size: 1.2em;
+	text-align: center;
 }
 
 div.form > div.result > span.info
 {
 	display: block;
+	margin-top: 3px;
 	font-weight: bold;
+}
+
+div.created
+{
+	position: fixed;
+	bottom: 100px;
+	color: #555;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 1.3em;
+	width: 100%;
 }
