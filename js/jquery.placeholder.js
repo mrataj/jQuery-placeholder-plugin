@@ -14,6 +14,9 @@
 
     var input = $(this);
 
+    var parent = input.parent();
+	parent.css('position', 'relative');
+	
     var placeholder = $('<div></div>');
     placeholder.addClass(settings.css);
     placeholder.text(settings.text);
@@ -24,8 +27,6 @@
     placeholder.css('opacity', 0.7);
     placeholder.css('cursor', input.css('cursor'));
     placeholder.css('font-size', settings.fontsize);
-
-    var parent = input.parent();
     parent.append(placeholder);
 
     toggle();

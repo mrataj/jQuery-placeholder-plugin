@@ -1,26 +1,72 @@
 body 
 {
-	font: 13px/1 arial,trebuchet MS,tahoma,helvetica,clean,sans-serif;
-	background:#000;
-	color:#fff;
+	font-family: arial,trebuchet MS,tahoma,helvetica,clean,sans-serif;
+	font-size: 62.5%;
+	background: #fff;
+	color: #000;
 }
 
 * {
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
 }
 
 html, body, form, img, fieldset, legend, table, tbody, thead, tfoot, tr, th, td 
 {
-	border:none;
+	border: none;
 }
 
 li 
 {
-	list-style:none;
+	list-style: none;
 }
 
-input[type='text']
+body
 {
-	width: 200px;
+	padding: 20px;
+}
+
+div.form
+{
+	margin: 0px auto;
+	width: 280px;
+}
+
+div.form > input[type='text']
+{
+	display: block;
+	width: 100%;
+	height: 24px;
+	border: 1px solid #ccc;
+	padding: 6px;
+	font-size: 1.6em;
+	margin: 6px;
+}
+
+div.form > input[type='text']:hover
+{
+	border-color: #6CBAEB;
+}
+
+div.form > input[type='submit']
+{
+	display: block;
+	margin: 10px auto;
+	width: 64px;
+	height: 28px;
+}
+
+div.form > div.result
+{
+	margin: 6px;
+	display: none;
+	align: center;
+	margin-top: 30px;
+	font-size: 1.2em;
+}
+
+div.form > div.result > span.info
+{
+	display: block;
+	font-weight: bold;
 }
