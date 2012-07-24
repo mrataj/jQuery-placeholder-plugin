@@ -61,6 +61,9 @@ jQuery.fn.placeholder = function (options) {
 
       if (!haveFocus && empty)
         placeholder.show();
+		
+      if (!haveFocus && !empty)
+        placeholder.hide();
     }
 
     $(input).bind('change', toggle);
